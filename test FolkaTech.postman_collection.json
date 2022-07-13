@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "cd3d8be9-04ec-4dc5-bfef-12713b5d6e6b",
+		"name": "test FolkaTech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "f0da58981065d16a7ee10dcce16026ab",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "a1ae853986535688ecfe7272ce19ff0e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/user/user/index-user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"user",
+								"index-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "f0da58981065d16a7ee10dcce16026ab",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "a1ae853986535688ecfe7272ce19ff0e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/user/user/get-user/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"user",
+								"get-user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "f0da58981065d16a7ee10dcce16026ab",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "a1ae853986535688ecfe7272ce19ff0e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"test2\",\n    \"accountNumber\": 123,\n    \"emailAddress\": \"test2@gmail.com\",\n    \"identityNumber\": 123\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/user/create-user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"user",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "a1ae853986535688ecfe7272ce19ff0e",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "f0da58981065d16a7ee10dcce16026ab",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"test2\",\n    \"accountNumber\": 123,\n    \"emailAddress\": \"test2@gmail.com\",\n    \"identityNumber\": 1234\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/user/update-user/8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"user",
+								"update-user",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleted",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "f0da58981065d16a7ee10dcce16026ab",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "a1ae853986535688ecfe7272ce19ff0e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/user/deleted-user/8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"user",
+								"deleted-user",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
